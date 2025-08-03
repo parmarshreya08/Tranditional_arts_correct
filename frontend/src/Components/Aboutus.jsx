@@ -111,7 +111,8 @@ export default function AboutUs() {
             <div style={s.card}>
               <h3 style={s.cardTitle}>Traditional Paintings</h3>
               <p style={{...s.text, marginBottom: '16px'}}>Immerse yourself in the vibrant colors and intricate details of traditional painting styles like Madhubani, Warli, Tanjore, and more.</p>
-              <a href="/arts/gallery" style={s.button}>Explore Art Gallery</a>
+              {/* <a href="/arts/gallery" style={s.button}>Explore Art Gallery</a> */}
+              <Link style={s.button} to="/arts/gallery">Explore Art Gallery</Link>
             </div>
             <div style={s.card}>
               <h3 style={s.cardTitle}>Master Artists</h3>
