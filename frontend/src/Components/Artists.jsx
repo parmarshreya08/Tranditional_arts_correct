@@ -18,7 +18,7 @@ const Artists = () => {
   const { addToWishlist, wishlistItems } = useWishlist();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/artist")
+    fetch("https://traditional-arts-back-46h7.onrender.com/api/artist")
       .then((res) => res.json())
       .then((data) => setArtists(data))
       .catch((err) => console.error("❌ Fetch error:", err));

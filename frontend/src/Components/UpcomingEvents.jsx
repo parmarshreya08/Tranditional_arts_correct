@@ -11,7 +11,7 @@ const UpcomingEvents = () => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/events")
+    fetch("https://traditional-arts-back-46h7.onrender.com/api/events")
       .then((res) => res.json())
       .then((data) => {
         const upcoming = data.filter((event) => event.status === "Upcoming");

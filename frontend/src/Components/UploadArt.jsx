@@ -39,7 +39,7 @@ const UploadArt = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/upload", formData);
+      const res = await axios.post("https://traditional-arts-back-46h7.onrender.com/upload", formData);
       setUploadedArts((prev) => [...prev, res.data.imageUrl]);
       setMessage("Upload successful!");
       setFile(null); // reset file
@@ -56,7 +56,7 @@ const UploadArt = () => {
     const fetchImages = async () => {
       try {
         setLoading(true);
-        const res = await axios.get("http://localhost:5000/images");
+        const res = await axios.get("https://traditional-arts-back-46h7.onrender.com/images");
         setUploadedArts(res.data.images);
       } catch (err) {
         console.error("Error fetching images:", err);
