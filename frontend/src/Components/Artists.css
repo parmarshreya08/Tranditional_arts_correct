@@ -35,7 +35,7 @@
 }
 
 .section-heading::after {
-  content: '\2728';
+  content: '';
   position: absolute;
   top: -15px;
   right: -20px;
