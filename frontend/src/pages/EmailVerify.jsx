@@ -17,13 +17,13 @@ const EmailVerify = () => {
 //       inputRefs.current[index + 1].focus();
 //     }
 //   };
-const handleInputChange = (e, index) => {
-  const value = e.target.value.replace(/\D/g, "");
-  e.target.value = value;
-  if (value && index < inputRefs.current.length - 1) {
-    inputRefs.current[index + 1].focus();
-  }
-};
+// const handleInputChange = (e, index) => {
+//   const value = e.target.value.replace(/\D/g, "");
+//   e.target.value = value;
+//   if (value && index < inputRefs.current.length - 1) {
+//     inputRefs.current[index + 1].focus();
+//   }
+// };
 
   //to delete digits for backspace
   const handleKeyDown = (e, index) => {
@@ -103,7 +103,7 @@ const handleInputChange = (e, index) => {
       maxLength="1"
       key={index}
       ref={(el) => (inputRefs.current[index] = el)}
-      onChange={(e) => handleInputChange(e, index)}
+      // onChange={(e) => handleInputChange(e, index)}
       onKeyDown={(e) => handleKeyDown(e, index)}
       onPaste={handlePaste}
       required
